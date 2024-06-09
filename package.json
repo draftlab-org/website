@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "draftlab-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,8 +10,35 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.10.1",
     "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.0.1",
+    "@astrojs/partytown": "^2.1.0",
+    "@astrojs/react": "^3.5.0",
+    "@astrojs/sitemap": "^3.1.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/bricolage-grotesque": "^5.0.6",
+    "@fontsource-variable/inter": "^5.0.18",
+    "@fontsource-variable/rubik": "^5.0.22",
+    "@fontsource/ibm-plex-serif": "^5.0.13",
+    "@iconify-json/bx": "^1.1.10",
+    "@iconify-json/simple-icons": "^1.1.102",
+    "@iconify-json/uil": "^1.1.8",
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.10.1",
+    "astro-icon": "^1.1.0",
+    "astro-navbar": "^2.3.2",
+    "astro-seo": "^0.8.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.1",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.2"
   }
 }
