@@ -21,6 +21,7 @@
     "@fontsource-variable/rubik": "^5.0.22",
     "@fontsource/ibm-plex-serif": "^5.0.13",
     "@iconify-json/bx": "^1.1.10",
+    "@iconify-json/icon-park-solid": "^1.1.14",
     "@iconify-json/simple-icons": "^1.1.102",
     "@iconify-json/uil": "^1.1.8",
     "@tailwindcss/typography": "^0.5.13",

@@ -6,22 +6,20 @@ import { Icon } from 'astro-icon/components'
 import highlight from '@assets/highlight.svg'
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 relative"
->
-  <Image
-    src={highlight}
-    alt="highlight"
-    class="grayscale top-0 left-0 w-full object-cover col-span-2 p-0 lg:p-24"
-  />
-  <div class="absolute">
-    <h1 class="font-serif text-6xl">Draftlab</h1>
-    <p class="text-4xl text-black font-light max-w-xl">
-      Creative project design for human rights and transparency organisations,
-      with a focus on appropriate technology and human systems.
-    </p>
-  </div>
+<main class="my-24 grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12">
+  <p class="text-5xl text-black font-light">
+    <span class="underline decoration-dlmain decoration-dotted decoration-8"
+      >Creative</span
+    > project design <br />for social good champions through
+    <span class="underline decoration-dlmain decoration-dotted decoration-8"
+      >appropriate</span
+    > technology that strengthens
+    <span class="underline decoration-dlmain decoration-dotted decoration-8"
+      >human</span
+    > systems
+  </p>.
 </main>
+
 <div>
   <div class="mt-6 flex flex-col sm:flex-row gap-3"></div>
 </div>

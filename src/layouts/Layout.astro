@@ -2,6 +2,7 @@
 import { SEO } from 'astro-seo'
 import Footer from '@components/footer.astro'
 import Navbar from '@components/navbar/navbar.astro'
+import { ViewTransitions } from 'astro:transitions'
 import '@fontsource/ibm-plex-serif'
 import '@fontsource-variable/rubik'
 
@@ -23,6 +24,7 @@ const makeTitle = title
 <!doctype html>
 <html lang="en">
   <head>
+    <ViewTransitions />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
