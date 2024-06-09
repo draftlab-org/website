@@ -1,53 +1,27 @@
 ---
-import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
+import { Image } from 'astro:assets'
+import heroImage from 'assets/hero.png'
+import Link from '@components/ui/link.astro'
+import { Icon } from 'astro-icon/components'
+import highlight from '@assets/highlight.svg'
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Draftlab
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 relative"
+>
+  <Image
+    src={highlight}
+    alt="highlight"
+    class="grayscale top-0 left-0 w-full object-cover col-span-2 p-0 lg:p-24"
+  />
+  <div class="absolute">
+    <h1 class="font-serif text-6xl">Draftlab</h1>
+    <p class="text-4xl text-black font-light max-w-xl">
+      Creative project design for human rights and transparency organisations,
+      with a focus on appropriate technology and human systems.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
-      </Link>
-    </div>
   </div>
 </main>
+<div>
+  <div class="mt-6 flex flex-col sm:flex-row gap-3"></div>
+</div>
