@@ -1,45 +1,7 @@
 ---
 // @ts-ignore
 import { Icon } from 'astro-icon/components'
-
-const features = [
-  {
-    title: 'Discovery',
-    description:
-      'Each project starts with initial conversations between us and the team. This is the starting point of any partnership, as well as a one-off targeted intervention in clinics and outreach activities.',
-    icon: 'icon-park-solid:avocado-one',
-  },
-  {
-    title: 'User research: light',
-    description:
-      'Test/validate assumptions, establish questions and scope for broader research, collect feedback, co-create and prioritize features/concepts',
-    icon: 'icon-park-solid:cheese',
-  },
-  {
-    title: 'User research: light',
-    description:
-      'Test/validate assumptions, establish questions and scope for broader research, collect feedback, co-create and prioritize features/concepts',
-    icon: 'icon-park-solid:cheese',
-  },
-  {
-    title: 'User research: light',
-    description:
-      'Test/validate assumptions, establish questions and scope for broader research, collect feedback, co-create and prioritize features/concepts',
-    icon: 'icon-park-solid:cheese',
-  },
-  {
-    title: 'User research: light',
-    description:
-      'Test/validate assumptions, establish questions and scope for broader research, collect feedback, co-create and prioritize features/concepts',
-    icon: 'icon-park-solid:cheese',
-  },
-  {
-    title: 'User research: light',
-    description:
-      'Test/validate assumptions, establish questions and scope for broader research, collect feedback, co-create and prioritize features/concepts',
-    icon: 'icon-park-solid:cheese',
-  },
-]
+import services from '@assets/services.yml'
 ---
 
 <div class="flex flex-col place-items-center">
@@ -50,20 +12,20 @@ const features = [
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 mt-16 gap-16">
   {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
+    services.map((item) => (
+      <div class="flex flex-col gap-4 items-start">
         <div class="mt-1 bg-black rounded-full pl-4 pt-4 h-20 w-20 shrink-0">
           <Icon class="text-dlmain w-12 h-12" name={item.icon} />
         </div>
-        <div>
-          <h3 class="font-semibold px-2 rounded border-b-2 bg-dlmain text-lg font-serif">
-            {item.title}
-          </h3>{' '}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
+        {/* <div> */}
+        <h3 class="font-semibold px-2 rounded border-b-2 bg-dlmain text-lg font-serif">
+          {item.title}
+        </h3>{' '}
+        <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
       </div>
+      // </div>
     ))
   }
 </div>

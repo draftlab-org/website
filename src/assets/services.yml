@@ -1,0 +1,32 @@
+- title: 'Discovery'
+  description: >
+    Each project starts with initial conversations between us and the team.
+    This is the starting point of any partnership, as well as a one-off targeted intervention in clinics and outreach activities.
+  icon: 'icon-park-solid:avocado-one'
+- title: 'User research: light'
+  description: >
+    Test/validate assumptions, establish questions and scope for broader research,
+    collect feedback, co-create and prioritize features/concepts
+  icon: 'icon-park-solid:cheese'
+- title: 'User Research: Expanded'
+  description: >
+    Investigate granular user flows;
+    describe and surface details for user flows and wireframes;
+    gauge broader community interest and feedback.
+  icon: 'icon-park-solid:eggplant'
+- title: 'Participatory Workshop'
+  description: >
+    There is unmatched creative power in bringing team, community, and other stakeholders together
+    for a focused, participatory co-creation event. Workshop facilitation is one of our superpowers,
+    and we use it especially when cohesion, community, and buy-in are crucial factors for success.
+  icon: 'icon-park-solid:banana'
+- title: 'Pre-design'
+  description: >
+    This is an iterative building process, where we unleash our skills in pattern matching and creative design on the collected output, looking for insights and best paths to usability and usefulness.
+    Produces handover-ready outputs like wireframes, technical specs, and feature definitions.
+  icon: 'icon-park-solid:bread'
+- title: 'Web Development'
+  description: >
+    Full-service app development, based on modern web standards and guided by "free as in freedom" open source values.
+    We build in-house, and partner with a network of values-driven designers, developers and product specialists.
+  icon: 'icon-park-solid:cup-one'
