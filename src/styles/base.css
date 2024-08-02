@@ -1,0 +1,15 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+  a {
+    @apply underline decoration-dlmain decoration-dotted decoration-4 transition hover:decoration-slate-400;
+  }
+}

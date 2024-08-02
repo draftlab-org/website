@@ -11,7 +11,14 @@ import yaml from '@rollup/plugin-yaml'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://draftlab.org',
-  integrations: [react(), tailwind(), partytown(), mdx(), sitemap(), icon()],
+  integrations: [
+    react(),
+    tailwind({ applyBaseStyles: false, nesting: true }),
+    partytown(),
+    mdx(),
+    sitemap(),
+    icon(),
+  ],
   vite: {
     plugins: [yaml()],
   },

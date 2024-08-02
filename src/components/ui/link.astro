@@ -26,7 +26,8 @@ const styles = {
   outline: 'bg-white border-2 border-black hover:bg-gray-100 text-black',
   primary:
     'bg-dlmain border-black border-2 text-black shadow-sharp transition duration-75 hover:shadow-sharp-pressed hover:translate-x-[1px] hover:translate-y-[1px]',
-  inverted: 'bg-white text-black border-2 border-transparent',
+  inverted:
+    'bg-white text-black border-2 border-transparent hover:bg-dlmain transition',
   muted: 'bg-gray-100 hover:bg-gray-200 border-2 border-transparent',
   black: 'bg-black border-white border-2 text-white',
 }
@@ -36,7 +37,7 @@ const styles = {
   href={href}
   {...rest}
   class:list={[
-    'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
+    'rounded text-center no-underline transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
     block && 'w-full',
     sizes[size],
     styles[style],
